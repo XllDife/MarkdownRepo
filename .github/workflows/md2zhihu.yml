@@ -10,7 +10,8 @@ jobs:
     - uses: drmingdrmer/md2zhihu@v0.8
       env:
         GITHUB_USERNAME: ${{ github.repository_owner }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # Use a PAT instead of GITHUB_TOKEN
+        GITHUB_TOKEN: ${{ secrets.PAT }}
       with:
         pattern: >
             _posts/*.md
