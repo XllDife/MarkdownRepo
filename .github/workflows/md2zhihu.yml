@@ -14,4 +14,3 @@ jobs:
       with:
         pattern: >
             _posts/*.md
-            _posts/*.markdown
