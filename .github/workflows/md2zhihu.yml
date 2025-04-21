@@ -11,7 +11,7 @@ jobs:
       env:
         GITHUB_USERNAME: ${{ github.repository_owner }}
         # Use a PAT instead of GITHUB_TOKEN
-        GITHUB_TOKEN: ${{ secrets.PAT }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         pattern: >
             _posts/*.md
