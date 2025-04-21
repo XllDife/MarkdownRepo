@@ -6,7 +6,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Upgrade pygments to a compatible version
-      run: pip install pygments>=2.13.0,<3.0.0
+      run: pip install "pygments>=2.13.0,<3.0.0"
     - uses: drmingdrmer/md2zhihu@v0.8
       env:
         GITHUB_USERNAME: ${{ github.repository_owner }}
